@@ -1,0 +1,18 @@
+.top20 {
+  margin-top: 20px;
+}
+.table {
+  font-size: 12px;
+}
+#export {
+  display: none;
+}
+td:hover {
+  cursor: pointer;
+}
+td {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

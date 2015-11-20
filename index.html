@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hymn Scheduler</title>
+    <script type="text/JavaScript" src="util.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row top20 text-center">
+        <div class="col-sm-12">
+          <h1>Hymn Scheduler</h1>
+        </div>
+      </div>
+      <div class="row top20">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              Welcome to the Hymn Scheduler. Enter the number of weeks you would like to select hymns for.
+              Christmas and patriotic hymns have been excluded. There will be no repeat hymns for consecutive weeks under 29.
+              Hymns can be changed after the seed by a simple click, but repeats may occur. Export to Excel via the export button.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row top20">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="input-group">
+            <input type="text" id='weeks' class="form-control" placeholder="Weeks">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" id='weeks' onclick="generate()">Seed</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row top20">
+        <div class="col-sm-12">
+          <table class="table table-bordered" id="output"></table>
+          <button class='btn btn-default top20' id='export' onclick="exportToExcel()">Export</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
